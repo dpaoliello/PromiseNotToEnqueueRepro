@@ -11,12 +11,7 @@
                 "test.cs"
             };
 
-            int result = 0;
-            do
-            {
-                result = Microsoft.CodeAnalysis.CSharp.CommandLine.Program.Main(new string[0], csharpArgs);
-            } while (result == 0);
-            return result;
+            return Microsoft.CodeAnalysis.CSharp.CommandLine.Program.Main(new string[0], csharpArgs);
         }
     }
 }
